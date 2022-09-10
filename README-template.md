@@ -4,7 +4,7 @@ This is a solution to the [3-column preview card component challenge on Frontend
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: https://github.com/Minirodi/3-column-preview-card-component-main
 - Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
 
