@@ -1,0 +1,105 @@
+:root{
+    --primary-orange:hsl(31, 77%, 52%);
+    --primary-dcyan:hsl(184, 100%, 22%);
+    --primary-vdcyan:hsl(179, 100%, 13%);
+    --transparent-white:hsla(0, 0%, 100%, 0.75);
+    --light-gray:hsl(0, 0%, 95%);
+    
+}
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+@font-face{font-family: 'Big Shoulders Display', cursive;}
+@font-face{font-family: 'Lexend Deca', sans-serif;}
+*{
+    box-sizing:border-box;
+}
+body{
+    background-color:var(--light-gray);
+}
+main{
+   display:grid;
+   justify-content:center;
+   align-items:center;
+   margin-top:3em;
+   grid-template-areas:
+   'sedans'
+   'suvs'
+   'luxury';
+}
+.container{
+    height:445px;
+    width:325px;
+    padding:2.5em;
+    color:var(--transparent-white);
+}
+    
+h1{
+    font-family:'Big Shoulders Display', cursive;
+    font-weight:700;
+    font-size:2.5em;
+    text-transform:uppercase;
+}
+.text{
+    font-family:'Lexend Deca',sans-serif;
+    font-weight:400;
+    font-size:1em;
+    line-height:2em;
+    margin-bottom:2em;
+}
+.btn{
+    background-color:var(--light-gray);
+    padding:1em 2em;
+    text-decoration:none;
+    border-radius:40px;
+    font-family:'Lexend Deca', sans-serif;
+}
+.sedans{
+    grid-area:sedans;
+    border-radius:10px 10px 0px 0px;
+    background-color:var(--primary-orange);
+   
+}
+.sedans .btn{
+    color:var(--primary-orange);
+}
+.suvs{
+    grid-area:suvs;
+    background-color:var(--primary-dcyan);
+   
+}
+.suvs .btn{
+    color:var(--primary-dcyan);
+}
+.luxury{
+    grid-area:luxury;
+    background-color:var(--primary-vdcyan);
+   
+}
+.luxury .btn{
+    color:var(--primary-vdcyan);
+}
+.btn:hover{
+   color:white;
+   border:2px solid white;
+   background-color:transparent; 
+}
+
+@media (min-width:900px){
+    
+    main{
+        grid-template-areas: 
+        'sedans suvs luxury';
+        margin-top:10em;  
+    }
+    .container{        
+        height:500px;
+        width:305px;
+        padding:2.5em;
+        color:var(--transparent-white);
+    }
+    .sedans{
+        border-radius:0px;
+    }
+    .text{
+        padding-bottom:2em
+    }
+}
